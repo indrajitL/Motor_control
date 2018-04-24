@@ -8,7 +8,7 @@
 
 uint32_t count;
 CONTROL_DATA robot1;
-float speed=9;
+volatile float speed=9;
 char Dir='A';
 
 
@@ -35,7 +35,7 @@ int main(void)
                 set_pwm0_duty(0.0);
                 set_pwm1_duty(0.0);
                 set_pwm2_duty(speed);
-                set_pwm2_duty(0.0);
+                set_pwm3_duty(0.0);
                 break;
             case 'C':
                 set_pwm0_duty(0.0);

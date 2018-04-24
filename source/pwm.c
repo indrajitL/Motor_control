@@ -41,9 +41,9 @@ void pwm_init(uint16_t freq)
     PWM0_0_LOAD_R |= 0x0000063FU; // 10KHz --> pwm
     PWM0_3_LOAD_R |= 0x0000063FU;
     PWM0_0_CMPA_R = 800;
-    PWM0_0_CMPB_R = 800;
+    PWM0_0_CMPB_R = 000;
     PWM0_3_CMPA_R = 800;
-    PWM0_3_CMPB_R = 800;
+    PWM0_3_CMPB_R = 000;
 
     PWM0_0_CTL_R |= 1U << 0U;  /* start pwm*/
     PWM0_3_CTL_R |= 1U << 0U;
